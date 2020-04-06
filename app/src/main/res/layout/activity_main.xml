@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal|center_vertical"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/header"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="129dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:textSize="45dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="268dp"
+        android:layout_below="@id/header"
+        android:layout_marginTop="70dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+
+
+
+       <EditText
+              android:id="@+id/edname"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:ems="10"
+              android:inputType="text"
+              android:drawableLeft="@drawable/ic_person"
+              android:drawablePadding="10dp"/>
+
+          <EditText
+              android:id="@+id/edpass"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="20sp"
+              android:ems="10"
+              android:inputType="textPassword"
+              android:drawableLeft="@drawable/ic_lock"
+              android:drawableRight="@drawable/ic_remove"
+              android:drawablePadding="10dp"
+          />
+
+
+
+          <Button
+              android:id="@+id/button"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="20sp"
+              android:background="@drawable/button"
+              android:text="Login"
+              android:textColor="@android:color/white"
+
+              />
+
+          <TextView
+              android:id="@+id/tvinfo"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="20sp"
+              android:gravity="center"
+              android:text="No of attempts remaining:" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="320dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/login" />
+
+
+
+
+</RelativeLayout>

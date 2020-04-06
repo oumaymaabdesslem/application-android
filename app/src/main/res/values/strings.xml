@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My login</string>
+    <string name="auClic">Convertir</string>
+    <string name="title_activity_convertion_temperature">ConvertionTemperatureActivity</string>
+</resources>
